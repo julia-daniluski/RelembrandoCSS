@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@keyframes animacao {
+    from {left: 0;}
+    to   {left: 500px;}
+}
+
+/* Reset das configurações */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    padding: 0;
+    background-image: url(https://i.pinimg.com/originals/f9/90/40/f99040dde23958d35155a5200039de2e.gif);
+    background-size: cover; /* Garante que a imagem cubra todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    color: white; /* Cor padrão para o texto */
+    font-size: 16px; /* Definindo uma fonte padrão para o body */
+}
+
+header {
+    background-color: rgba(0, 77, 0, 0.557);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 30px;
+    color: rgba(180, 0, 0, 0.753);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* Ocupa o restante da altura da tela entre header e footer */
+    padding-top: 60px; /* Evita sobreposição com o header fixo */
+}
+
+main p {
+    margin: 0;
+    padding: 30px 50px;
+    background-color: rgba(255, 234, 0, 0.365);
+    color: #7f0000;
+    font-size: 30px; /* Texto maior e legível */
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 50%; /* Limita a largura para que o texto não fique muito esticado */
+}
+
+div {
+    animation: animacao 2s ease-in-out;
+}
+
+footer {
+    background-color: rgba(0, 77, 0, 0.557);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+footer p {
+    text-align: center;
+    color: rgba(180, 0, 0, 0.753);
+    font-size: 22px; /* Tamanho do texto no rodapé */
+    font-weight: 500;
+}
