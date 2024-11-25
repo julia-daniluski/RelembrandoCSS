@@ -60,9 +60,6 @@ main p {
     max-width: 50%; /* Limita a largura para que o texto não fique muito esticado */
 }
 
-div {
-    animation: animacao 2s ease-in-out;
-}
 
 footer {
     background-color: rgba(0, 77, 0, 0.557);
