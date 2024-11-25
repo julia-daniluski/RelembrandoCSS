@@ -46,6 +46,7 @@ main {
     align-items: center;
     height: calc(100vh - 120px); /* Ocupa o restante da altura da tela entre header e footer */
     padding-top: 60px; /* Evita sobreposição com o header fixo */
+    
 }
 
 main p {
